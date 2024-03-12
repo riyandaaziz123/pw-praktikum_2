@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge_Riyanda azizi</title>
+  <style>
+    table {
+      border-collapse: collapse; /* Remove borders for a table-like layout */
+    }
+    .border{
+        border: 1px solid black; /* Add border to the entire table */
+        border-collapse: collapse; 
+    }
+    .border td{
+        border: 1px solid black; /* Add border to the entire table */
+        border-collapse: collapse; 
+    }
+    th {
+      padding: 5px; /* Maintain padding for cell content */
+      text-align: center; /* Align content to the left */
+    }
+    td {
+      padding: 5px; /* Maintain padding for cell content */
+    }
+    img {
+      width: 100px; /* Maintain image width */
+    }
+  </style>
+</head>
+<body>
+  <h1>Challenge_22.11.4680</h1>
+  <table class="border">
+    <tr>
+      <th colspan="4" bgcolor="orange" >DAFTAR BUKU</th>
+    </tr>
+
+    <tr class="border">
+      <td rowspan="4">
+        <img src="https://elibrary.bsi.ac.id/assets/images/buku/211939.png" alt="buku Pemograman web">
+      </td>
+      <th>Judul</th>
+      <td>:</td>
+      <td>Web Pemograman</td>
+    </tr>
+    <tr>
+      <th>Harga</th>
+      <td>:</td>
+      <td>Rp. 245.000,00</td>
+    </tr>
+    <tr >
+      <th>Pengarang</th>
+      <td>:</td>
+      <td>Thomas Slebew</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <h2>Isilah Formulir Berikut Ini</h2>
+
+  <form action="/action_page.php" method="post">
+    <table>
+      <tr>
+        <td><label for="fname">Nama:</label></td>
+        <td><input type="text" id="fname" name="fname" placeholder="Nama Kamu"></td>
+      </tr>
+      <tr>
+        <td><label for="lname">Password:</label></td>
+        <td><input type="password" id="lname" name="lname"></td>
+      </tr>
+      <tr>
+        <td><label for="sex">Jenis Kelamin:</label></td>
+        <td>
+          <input type="radio" id="male" name="sex" value="male">
+          <label for="male">Laki-Laki</label>
+          <input type="radio" id="female" name="sex" value="female">
+          <label for="female">Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="hobbies">Hobi:</label></td>
+        <td>
+          <input type="checkbox" id="hobby1" name="hobby[]" value="Membaca Buku">
+          <label for="hobby1">Membaca Buku</label>
+          <input type="checkbox" id="hobby2" name="hobby[]" value="Menulis">
+          <label for="hobby2">Menulis</label>
+          <input type="checkbox" id="hobby3" name="hobby[]" value="Memancing">
+          <label for="hobby3">Memancing</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="city">Asal Kota:</label></td>
+        <td>
+          <select id="cars" name="cars">
+            <option value="volvo">Bandung</option>
+            <option value="saab">Jakarta</option>
+            <option value="fiat" selected>Semarang</option>
+            <option value="audi">Solo</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="subject">Komentar Anda:</label></td>
+        <td><textarea id="subject" name="subject" placeholder="Silahkan katakan isi hati anda" style="width:30%;height: 5%;"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="submit">Mulai Proses!</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
